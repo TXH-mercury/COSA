@@ -1,0 +1,42 @@
+{
+    "output_dir": "",
+    "video_resolution":224,
+    "learning_rate": 1e-04,
+    "itm_ratio":0.1,
+    "optim": "adamw",
+    "betas": [
+        0.9,
+        0.98
+    ],
+    "weight_decay": 0.01,
+    "grad_norm": 5.0,
+    "warmup_ratio": 0.1,
+    "seed": 50,
+    "fp16": true,
+    "pin_mem": true,
+    "data_cfg":{"train":  
+                        [{"name": "mscoco_ret",
+                          "txt": "datasets/coco/train_desc.json",
+                          "video": "datasets/coco/images/",
+                          "datatype": "image",
+                          "max_txt_len":30,
+                          "data_format":"frame",
+                          "task" : "ret",
+                          "epoch": 5,
+                          "n_workers":8,
+                          "batch_size": 256}],
+                      "val":                
+                        [{
+                            "name": "mscoco_ret",
+                              "txt": "datasets/coco/test_desc.json",
+                              "video": "datasets/coco/images/",
+                            "annfile": "datasets/coco/caption_anno.json",
+                            "datatype": "image",  
+                            "max_txt_len":30,
+                            "data_format":"frame",
+                            "task" : "ret",
+                            "n_workers": 8,
+                            "batch_size": 128 
+                        }]}}
+
+

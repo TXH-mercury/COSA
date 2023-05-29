@@ -1,0 +1,43 @@
+{
+    "output_dir": "",
+    "video_resolution":224,
+    "use_itm":true,
+    "eval_itm":true,
+    "itm_ratio":0.1,
+    "itm_hard_negative":true,
+    "learning_rate": 1e-04,
+    "optim": "adamw",
+    "betas": [
+        0.9,
+        0.98
+    ],
+    "weight_decay": 0.01,
+    "grad_norm": 5.0,
+    "warmup_ratio": 0.1,
+    "seed": 50,
+    "fp16": true,
+    "pin_mem": true,
+    "data_cfg":{"train":  
+                        [{"name": "msvd_cap",                      
+                          "txt": "datasets/msvd/train_desc.json",
+                          "video": "datasets/msvd/frames_fps4",
+                          "datatype": "video",
+                          "video_sample_num": 4,
+                          "max_txt_len":30,
+                          "task" : "cap",
+                          "epoch": 2.5,
+                          "n_workers":8,
+                          "batch_size": 64}],
+                "val":                
+                    [{
+                        "name": "msvd_cap",
+                        "txt": "datasets/msvd/test_desc.json",
+                        "video": "datasets/msvd/frames_fps4",
+                        "datatype": "video",  
+                        "annfile": "datasets/msvd/cap_anno.json",
+                        "video_sample_num": 8,
+                        "max_txt_len":30,
+                        "task" : "cap",
+                        "n_workers": 8,
+                        "batch_size": 32 
+                     }]}}
