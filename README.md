@@ -1,4 +1,7 @@
 # COSA: Concatenated Sample Pretrained Vision-Language Foundation Model
+
+<div align=center><img src=COSA-sample.png width="75%" height="75%"></div>
+
 This is the official repository of COSA which provide training and testing code, as well as pretraining checkpoints. 
 
 
@@ -15,7 +18,9 @@ cd apex
 pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 ```
 - setup packages.
-
+```
+sh preinstall.sh
+```
 ## Download Checkpoints
 - [pretrained_weights](https://drive.google.com/file/d/1n6cDOhwEyrba3fz0ftLeFkBXe98fcCr7/view?usp=share_link) (BERT,CLIP,Swin).
 
