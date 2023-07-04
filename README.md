@@ -90,19 +90,20 @@ if you want to test model, just add following two rows to the cmd:
 sh scripts/pretrain_base_swin_5m.sh
 ```
 
-
-<!-- 
 ## Citation
 
 If you find this code useful for your research, please consider citing:
+
+
 ```
-@inproceedings{chen2020opt,
-  title={OPT: Universal image-text representation learning},
-  author={Chen, Yen-Chun and Li, Linjie and Yu, Licheng and Kholy, Ahmed El and Ahmed, Faisal and Gan, Zhe and Cheng, Yu and Liu, Jingjing},
-  booktitle={ECCV},
-  year={2020}
+@article{chen2023cosa,
+  title={COSA: Concatenated Sample Pretrained Vision-Language Foundation Model},
+  author={Chen, Sihan and He, Xingjian and Li, Handong and Jin, Xiaojie and Feng, Jiashi and Liu, Jing},
+  journal={arXiv preprint arXiv:2306.09085},
+  year={2023}
 }
 ```
+
 
 ## License
 
