@@ -22,7 +22,7 @@ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cud
 sh preinstall.sh
 ```
 ## Download Checkpoints
-- [pretrained_weights](https://drive.google.com/file/d/1n6cDOhwEyrba3fz0ftLeFkBXe98fcCr7/view?usp=share_link) (BERT,CLIP,Swin).
+- [pretrained_weights](https://drive.google.com/file/d/1o3bOw1-tirRK0G7yqEWBPjfmUMUth-DI/view?usp=sharing) (BERT,CLIP,Swin).
 
 Put pretrained_weights dir under main path. (COSA/pretrained_weights)
 
