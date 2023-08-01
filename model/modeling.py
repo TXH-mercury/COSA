@@ -293,7 +293,7 @@ class COSAModel(COSAPreTrainedModel):
             self.video_dim = 1024
         clip_weight = clip_weight.state_dict()
 
-        self.clip_model = build_model(clip_weight, config.video_resolution,config.checkpointing, adaptor_layers = config.vision_adaptor_layers, vision_mask=config.vision_mask).float()
+        self.clip_model = build_model(clip_weight, config.video_resolution, config.checkpointing).float()
         
         self.clip_model.tokenizer = CLIPTokenizer.from_pretrained('openai/clip-vit-large-patch14')
         
