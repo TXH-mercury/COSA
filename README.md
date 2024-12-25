@@ -1,4 +1,4 @@
-# COSA: Concatenated Sample Pretrained Vision-Language Foundation Model
+# [ICLR2024] COSA: Concatenated Sample Pretrained Vision-Language Foundation Model
 
 <div align=center><img src=COSA-sample.png width="75%" height="75%"></div>
 
